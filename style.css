@@ -407,9 +407,6 @@ ul li a:hover {
   padding-bottom: 2rem;
   box-shadow: inset 2px 2px 50px rgba(0, 0, 0, 0.6);
 }
-.project-name {
-  /* font: var(--subheading); */
-}
 
 .project img {
   width: 100%;
