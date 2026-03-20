@@ -403,7 +403,6 @@ ul li a:hover {
   gap: 2rem;
   border-radius: 24px;
   background-color: #653239;
-  overflow: hidden;
   padding-bottom: 2rem;
   box-shadow: inset 2px 2px 50px rgba(0, 0, 0, 0.6);
 }
@@ -412,6 +411,8 @@ ul li a:hover {
   width: 100%;
   object-fit: cover;
   height: 200px;
+  padding: 8px;
+  border-radius: 35px;
   transition: 0.3s ease;
 }
 
@@ -426,6 +427,7 @@ ul li a:hover {
   border-radius: 12px;
   text-decoration: none;
   transition: 0.3s ease;
+  color: var(--accent-1);
 }
 
 .visit-project:hover {
