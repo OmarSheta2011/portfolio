@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="header-and-sidebar.css" />
+    <link rel="stylesheet" href="settings-style.css" />
+  </head>
+  <body>
+    <input id="theme-toggle" type="checkbox" />
+    <div class="main-container">
+      <header>
+        <!-- serach / title / profile / theme -->
+        <div class="search">
+          <input
+            class="search-input"
+            name="student_name"
+            type="text"
+            placeholder="Search Students"
+          />
+          <img
+            src="../../media/photos/search.svg"
+            alt="search"
+            class="search-img"
+          />
+        </div>
+
+        <!-- title -->
+        <h1 class="page-title">Settings</h1>
+
+        <div class="header-group">
+          <!-- theme -->
+          <div class="checks">
+            <input id="theme-toggle" type="checkbox" />
+            <label for="theme-toggle">
+              <img src="../../media/photos/half-moon.svg" alt="light" />
+            </label>
+          </div>
+
+          <!-- profile -->
+          <div class="profile">
+            <img src="../../media/photos/person.svg" alt="admin-photo" />
+            <h3>Admin</h3>
+          </div>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <!-- sidebar navigation -->
+        <h2>Navigation</h2>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item"><a href="students.html">Students</a></li>
+            <li class="nav-item"><a href="classes.html">Classes</a></li>
+            <li class="nav-item"><a href="teachers.html">Teachers</a></li>
+            <li class="nav-item active">
+              <a href="settings.html">Settings</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="settings-container">
+          <div class="profile">
+            <div class="profile-title">
+              <h3 class="profile-heading">Profile</h3>
+              <p class="profile-subtitle">Change your Personal Information</p>
+            </div>
+
+            <div class="profile-avatar">
+              <img
+                src="../../media/photos/person.svg"
+                alt="admin avatar"
+                class="avatar"
+              />
+              <button class="change-avatar-btn">Change avatar</button>
+            </div>
+            <form class="profile-input-field">
+              <div class="input-group">
+                <label for="username">Admin Name</label>
+                <input name="admin_name" type="text" id="username" />
+              </div>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input name="password" type="password" id="password" />
+              </div>
+              <button type="submit" class="save">Save</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

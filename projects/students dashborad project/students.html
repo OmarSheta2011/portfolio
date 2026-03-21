@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+    <link rel="stylesheet" href="header-and-sidebar.css" />
+    <link rel="stylesheet" href="students-style.css" />
+  </head>
+  <body>
+    <input id="theme-toggle" type="checkbox" />
+    <div class="main-container">
+      <header>
+        <!-- serach / title / profile / theme -->
+        <div class="search">
+          <input
+            class="search-input"
+            name="student_name"
+            type="text"
+            placeholder="Search Students"
+          />
+          <img
+            src="../../media/photos/search.svg"
+            alt="search"
+            class="search-img"
+          />
+        </div>
+
+        <!-- title -->
+        <h1 class="page-title">Students</h1>
+
+        <div class="header-group">
+          <!-- theme -->
+          <div class="checks">
+            <input id="theme-toggle" type="checkbox" />
+            <label for="theme-toggle">
+              <img src="../../media/photos/half-moon.svg" alt="light" />
+            </label>
+          </div>
+
+          <!-- profile -->
+          <div class="profile">
+            <img src="../../media/photos/person.svg" alt="admin-photo" />
+            <h3>Admin</h3>
+          </div>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <!-- sidebar navigation -->
+        <h2>Navigation</h2>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item active">
+              <a href="students.html">Students</a>
+            </li>
+            <li class="nav-item"><a href="classes.html">Classes</a></li>
+            <li class="nav-item"><a href="teachers.html">Teachers</a></li>
+            <li class="nav-item"><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="table-component-section">
+          <table class="table-component">
+            <thead class="table-head">
+              <tr>
+                <th class="col-id">ID</th>
+                <th class="col-name">Name</th>
+                <th class="col-class">Class</th>
+                <th class="col-age">Age</th>
+                <th class="col-status">Status</th>
+                <th class="col-actions">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody class="table-body">
+              <tr>
+                <td class="col-id">#001</td>
+                <td class="col-name">Ahmed Ali</td>
+                <td class="col-class">3A</td>
+                <td class="col-age">14</td>
+                <td class="col-status">
+                  <span class="status active">Active</span>
+                </td>
+                <td class="col-actions actions">
+                  <button class="btn-view">View</button>
+                  <button class="btn-edit">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-id">#002</td>
+                <td class="col-name">Mohamed Ahmed</td>
+                <td class="col-class">3A</td>
+                <td class="col-age">13</td>
+                <td class="col-status">
+                  <span class="status absent">Absent</span>
+                </td>
+                <td class="col-actions actions">
+                  <button class="btn-view">View</button>
+                  <button class="btn-edit">Edit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

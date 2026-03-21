@@ -1,0 +1,75 @@
+/* --------- DASHBOARD STATS SECTION --------- */
+
+.stats {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--sp-2);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* عشان الكروت كلها تكون نفس الطول */
+  width: 100%;
+  gap: var(--sp-7); /* مسافات موحدة من السيستم */
+  flex-wrap: wrap;
+  padding: var(--sp-2) 0;
+}
+
+/* --------- STATS CARD --------- */
+
+.stats-card {
+  background-color: var(--clr-bg-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: var(--sp-8); /* 4rem */
+  border-radius: var(--sp-5); /* 2rem */
+  border: 1px solid var(--clr-border); /* بوردر خفيف يحدد الكارت */
+  box-shadow: var(--shadow); /* استخدام الـ Shadow الموحد */
+  min-height: 25rem;
+  min-width: 290px;
+  text-align: center;
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    /* حركة "Bounce" خفيفة */ box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.1);
+  border-color: var(--clr-primary); /* الكارت لونه يتغير للأزرق لما تقرب منه */
+}
+
+/* --------- CARD CONTENT --------- */
+
+.stats-card p {
+  font-size: var(--fs-base); /* 1.6rem */
+  font-weight: 600;
+  color: var(--clr-text-muted); /* لون باهت للعنوان عشان يبرز الرقم */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.stats-card span {
+  font-size: var(--fs-xxl); /* 4.8rem */
+  font-weight: 800;
+  color: var(--clr-text-main);
+  margin: var(--sp-5) 0; /* مسافة حول الرقم */
+  display: block;
+}
+
+/* إضافة لمسة احترافية: أيقونة صغيرة أو خط تحت الرقم */
+.stats-card::after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: var(--clr-primary-soft);
+  border-radius: var(--r-full);
+  margin-top: auto;
+}
