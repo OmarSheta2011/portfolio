@@ -484,11 +484,6 @@ textarea {
   border: 0.5px solid var(--light-dominant);
 }
 
-textarea::selection,
-input::selection {
-  background-color: #0d1a25;
-}
-
 textarea:focus,
 input:focus,
 :where(input, textarea):not(:placeholder-shown) {
@@ -537,6 +532,8 @@ button:hover {
   color: var(--dark-dominant);
 }
 
+/* ----------- footer  ----------- */
+
 footer {
   background-color: var(--dark-dominant);
   padding: 2rem 0 0.5rem 0;
@@ -548,7 +545,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "brand links socials"
+    "links brand socials"
     "botom botom botom";
   text-align: center;
 }
@@ -588,6 +585,14 @@ footer {
   flex-direction: column;
 }
 
+.footer-socials a {
+  color: var(--accent-2);
+}
+
+.footer-socials a:hover {
+  text-decoration: none;
+}
+
 .social-icons {
   width: 100%;
   gap: 3rem;
@@ -604,6 +609,8 @@ footer {
   padding: 1rem 0 1rem 0;
   border-top: 1px solid var(--light-dominant);
 }
+
+/* ----------- media quieres  ----------- */
 
 @media (max-width: 890px) {
   nav ul {
@@ -670,5 +677,3 @@ footer {
     gap: 2rem;
   }
 }
-
-/*  iam omar sheta */
