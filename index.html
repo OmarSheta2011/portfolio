@@ -43,38 +43,7 @@
         <section class="section skills">
           <h2 id="skills" class="section-heading"><span>Skills</span></h2>
           <div class="skills-container">
-            <div class="skill">
-              <h3>HTML</h3>
-              <img src="media/photos/html.svg" alt="" class="lang html" />
-            </div>
-            <div class="skill">
-              <h3>CSS</h3>
-              <img src="media/photos/css.svg" alt="" class="lang CSS" />
-            </div>
-            <div class="skill">
-              <h3>JAVASCRIPT</h3>
-              <img src="media/photos/javascript.svg" alt="" class="lang js" />
-              <span>--in progres--</span>
-            </div>
-            <div class="skill">
-              <h3>PYTHON</h3>
-              <img src="media/photos/python.svg" alt="" class="lang py" />
-            </div>
-            <div class="skill">
-              <h3>GIT</h3>
-              <img src="media/photos/git.svg" alt="Git Logo" class="lang git" />
-              <span>--in progres--</span>
-            </div>
 
-            <div class="skill">
-              <h3>SQL</h3>
-              <img
-                src="media/photos/sql.svg"
-                alt="Database Logo"
-                class="lang sql"
-              />
-              <span>--in progres--</span>
-            </div>
           </div>
         </section>
         <section class="section about">
@@ -102,7 +71,7 @@
               <div class="about-stats">
                 <div class="stat"><strong>5+</strong><span>Projects</span></div>
                 <div class="stat"><strong>2</strong><span>Languages</span></div>
-                <div class="stat"><strong>Yellow</strong><span>Belt</span></div>
+                <div class="stat"><strong style="color:rgb(18, 207, 75)">Green</strong><span>Belt</span></div>
               </div>
             </div>
           </div>
@@ -118,7 +87,7 @@
               />
               <h3 class="project-name">students dashboard</h3>
               <a
-                href="projects/students dashborad project/dashboard.html"
+                href="../students dashboard/index.html"
                 class="visit-project"
                 >VISIT</a
               >
@@ -234,17 +203,18 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <p>&copy; 2026 Omar Sheta. Built with HTML & CSS</p>
+            <p>&copy; 2026 Omar Sheta. Built with HTML & CSS & JS</p>
           </div>
         </div>
       </footer>
-      <script>
+    </div>
+    <script>
         const hamburger = document.querySelector(".hamburger");
         const nav = document.querySelector("nav");
         hamburger.addEventListener("click", () => {
           nav.classList.toggle("active");
         });
       </script>
-    </div>
+    <script src="scripts/script.js" type="module"></script>
   </body>
 </html>
