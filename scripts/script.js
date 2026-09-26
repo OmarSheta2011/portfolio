@@ -1,5 +1,6 @@
 import { skills } from "./skills.js";
 import { projects } from "./projects.js";
+
 function generateSkills() {
   let skillsHTML = "";
   skills.forEach((skill) => {

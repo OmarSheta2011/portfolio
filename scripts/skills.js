@@ -15,6 +15,11 @@ export const skills = [
     state: true,
   },
   {
+    name: "REACT",
+    image: "media/photos/react.svg",
+    state: false,
+  },
+  {
     name: "PYTHON",
     image: "media/photos/python.svg",
     state: true,
@@ -27,11 +32,6 @@ export const skills = [
   {
     name: "SQL",
     image: "media/photos/sql.svg",
-    state: false,
-  },
-  {
-    name: "REACT",
-    image: "media/photos/react.svg",
     state: false,
   },
 ];
